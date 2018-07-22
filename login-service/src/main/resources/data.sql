@@ -1,0 +1,1 @@
+insert into User values (0,'murilo.saunitti@gmail.com','mmsalmeida','Murilo Marques','1234')

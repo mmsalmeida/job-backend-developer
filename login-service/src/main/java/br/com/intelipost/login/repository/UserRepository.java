@@ -9,5 +9,6 @@ import br.com.intelipost.login.model.User;
 public interface UserRepository extends JpaRepository<User, Long>{
 	
 	Optional<User> findById(Long Id);
-
+	
+	Optional<User> findByLoginAndPassword(String login,String password);
 }

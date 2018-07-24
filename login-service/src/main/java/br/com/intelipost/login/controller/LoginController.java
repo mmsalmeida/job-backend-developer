@@ -27,7 +27,6 @@ public class LoginController {
 	
 	@PostMapping(value="/login")
 	public String valida(@RequestBody LoginDTO loginInfo) {
-		//System.out.println("Passei por aqui antes de validar");
 		if (loginService.validaLogin(loginInfo.getLogin(),loginInfo.getPassword())) {
 			return "Usuario Logado com Sucesso";
 		} 
@@ -36,6 +35,7 @@ public class LoginController {
 			return " Usuario Invalido";
 		}
 		
+	
 		
 	}
 	

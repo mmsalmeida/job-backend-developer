@@ -1,5 +1,6 @@
 package br.com.intelipost.login.repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -11,4 +12,6 @@ public interface UserRepository extends JpaRepository<User, Long>{
 	Optional<User> findById(Long Id);
 	
 	Optional<User> findByLoginAndPassword(String login,String password);
+	
+	List<User> findAll();
 }
